@@ -1,4 +1,9 @@
 Feature: User Registration
-  Scenario: Successfully load home page
+  Scenario: Successfully Load home page
     Given User has navigated to the website
-    Then home page should be visible
+    Then Home page should be visible
+
+  Scenario: Successfully open login page
+    Given User is on home page
+    When User clicks Signup-Login button
+    Then login page should be visible
