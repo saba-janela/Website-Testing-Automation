@@ -21,7 +21,7 @@ target/
 mvnw.cmd
 .mvnw
 cucumber.json
-.mvn
+.mvn/
 
 ### NetBeans ###
 /nbproject/private/
