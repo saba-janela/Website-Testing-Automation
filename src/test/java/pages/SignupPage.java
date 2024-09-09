@@ -1,16 +1,14 @@
 package pages;
 
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import util.BrowserDriver;
 
 public class SignupPage extends BrowserDriver{
-
     public static String testName = "testName";
-    public static String testEmail = "testJaneasdasadlaaa@gmail.com";
-    public static String testPassword = "testName";
+    public static String testEmail = "testingemail123@gmail.com";
+    public static String testPassword = "testPassword";
     public static String testFirstName = "testFirstName";
     public static String testLastName = "testFullName";
     public static String testAddress1 = "testAddress1";
