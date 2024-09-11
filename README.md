@@ -18,19 +18,19 @@ This project automates the testing of a website's various functionalities using 
 
 ## Running Tests
 
-You can run the tests from the command line or from within your IDE.
+### You can run the tests from the command line or from within your IDE.
 
 #### From the command line:
 <pre><code">// IDK YET //</code></pre>
 
-#### From within the IDE:
+### From within the IDE:
 1. Navigate to "src/test/runner/TestRunner"
 2. Change "tags" parameter to the relevant one (Regestration_E2E, Registration, Login, Smoke)
 3. Run the file
 
 
 ## Test Structure
-The project follows a standard Maven and Cucumber BDD structure:
+#### The project follows a standard Maven and Cucumber BDD structure:
 
 - src/main/java: Contains the main code.
 - src/test/java: Contains the step definitions, API tests, Page Objects and Cucumber runners.
