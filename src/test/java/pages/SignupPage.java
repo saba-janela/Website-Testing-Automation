@@ -7,7 +7,7 @@ import util.BrowserDriver;
 
 public class SignupPage extends BrowserDriver{
     public static String testName = "testName";
-    public static String testEmail = "testingemail123@gmail.com";
+    public static String testEmail = "testingEmailForApi@gmail.com";
     public static String testPassword = "testPassword";
     public static String testFirstName = "testFirstName";
     public static String testLastName = "testFullName";
