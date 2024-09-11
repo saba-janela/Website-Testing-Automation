@@ -1,9 +1,11 @@
 Feature: User Login with correct email and password
 
+  @Smoke
   Scenario: Successfully Load home page
     Given User has navigated to the website
     Then Home page should be visible
 
+  @Smoke
   Scenario: Successfully open login page
     Given User is on home page
     When User clicks Signup-Login button
