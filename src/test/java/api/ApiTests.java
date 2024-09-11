@@ -1,4 +1,4 @@
-package API;
+package api;
 
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static pages.SignupPage.testPassword;
 
-public class Tests {
+public class ApiTests {
     String email = "testingEmailForApi@gmail.com";
 
     @Test
