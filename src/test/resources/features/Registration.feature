@@ -27,6 +27,6 @@ Feature: User Registration
 
   @Registration_E2E
   Scenario: Successfully deleting user account
-    Given User is logged in
+    Given User is Registered
     When User clicks Delete Account button
     Then Account should be deleted

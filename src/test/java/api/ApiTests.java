@@ -27,7 +27,6 @@ public class ApiTests {
         assertTrue(responseBody.contains("products"), "Response should contain 'products'");
     }
 
-    // receiving wrong response code
     @Test
     public void testPostToAllProductsList(){
         String endpoint = "https://automationexercise.com/api/productsList";
@@ -40,9 +39,10 @@ public class ApiTests {
                         extract().response();
 
         String responseBody = response.getBody().asString();
+        System.out.println(responseBody);
 
-        assertEquals(405, response.getStatusCode(), "Expected status code is 405");
-        assertTrue(responseBody.contains("This request method is not supported."), "Response should contain 'This request method is not supported'");
+        assertTrue(responseBody.contains("\"responseCode\": 405"), "Response should contain '\"responseCode\": 405'");
+        assertTrue(responseBody.contains("This request method is not supported."), "Response should contain 'This request met   hod is not supported'");
     }
 
     @Test
@@ -62,7 +62,6 @@ public class ApiTests {
         assertTrue(responseBody.contains("brands"), "Response should contain 'brands'");
     }
 
-    // receiving wrong response code
     @Test
     public void testPutToAllBrandsList(){
         String endpoint = "https://automationexercise.com/api/brandsList";
@@ -76,7 +75,7 @@ public class ApiTests {
 
         String responseBody = response.getBody().asString();
 
-        assertEquals(405, response.getStatusCode(), "Expected status code is 405");
+        assertTrue(responseBody.contains("\"responseCode\": 405"), "Response should contain '\"responseCode\": 405'");
         assertTrue(responseBody.contains("This request method is not supported."), "Response should contain 'This request method is not supported.'");
     }
 
@@ -98,7 +97,6 @@ public class ApiTests {
         assertTrue(responseBody.contains("products"), "Response should contain 'products'");
     }
 
-    // receiving wrong response code
     @Test
     public void testPostToSearchProductsFail(){
         String endpoint = "https://automationexercise.com/api/searchProduct";
@@ -112,11 +110,10 @@ public class ApiTests {
 
         String responseBody = response.getBody().asString();
 
-        assertEquals(400, response.getStatusCode(), "Expected status code is 400");
+        assertTrue(responseBody.contains("\"responseCode\": 400"), "Response should contain '\"responseCode\": 400'");
         assertTrue(responseBody.contains("Bad request"), "Response should contain 'Bad request'");
     }
 
-    // Is it possible to run registration scenario from here
     @Test
     public void testPostToVerifyLogin(){
         String endpoint = "https://automationexercise.com/api/verifyLogin";
@@ -136,7 +133,6 @@ public class ApiTests {
         assertTrue(responseBody.contains("User exists!"), "Response should contain 'User exists!'");
     }
 
-    // receiving wrong response code
     @Test
     public void testPostToVerifyLoginFail(){
         String endpoint = "https://automationexercise.com/api/verifyLogin";
@@ -151,11 +147,10 @@ public class ApiTests {
 
         String responseBody = response.getBody().asString();
 
-        assertEquals(400, response.getStatusCode(), "Expected status code is 400");
+        assertTrue(responseBody.contains("\"responseCode\": 400"), "Response should contain '\"responseCode\": 400'");
         assertTrue(responseBody.contains("Bad request"), "Response should contain 'Bad request'");
     }
 
-    // receiving wrong response code
     @Test
     public void testDeleteToVerifyLogin(){
         String endpoint = "https://automationexercise.com/api/verifyLogin";
@@ -170,7 +165,7 @@ public class ApiTests {
         String responseBody = response.getBody().asString();
         System.out.println(responseBody);
 
-        assertEquals(405, response.getStatusCode(), "Expected status code is 405");
+        assertTrue(responseBody.contains("\"responseCode\": 405"), "Response should contain '\"responseCode\": 405'");
         assertTrue(responseBody.contains("This request method is not supported"), "Response should contain 'This request method is not supported'");
     }
 

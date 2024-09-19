@@ -6,8 +6,8 @@ import io.cucumber.java.en.When;
 import static pages.DeletePage.*;
 
 public class DeletePage {
-    @Given("User is logged in")
-    public void UserIsLoggedIn() {
+    @Given("User is Registered")
+    public void UserIsRegistered() {
         verifyUserLogin();
     }
 
