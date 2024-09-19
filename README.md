@@ -18,12 +18,7 @@ This project automates the testing of a website's various functionalities using 
 
 ## Running Tests
 
-### You can run the tests from the command line or from within your IDE.
-
-#### From the command line:
-<pre><code>// IDK YET //</code></pre>
-
-### From within the IDE:
+### You can run the tests from within your IDE.
 1. Navigate to "src/test/runner/TestRunner"
 2. Change "tags" parameter to the relevant one (Regestration_E2E, Registration, Login, Smoke)
 3. Run the file
