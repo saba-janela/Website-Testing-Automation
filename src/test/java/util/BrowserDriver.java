@@ -10,7 +10,7 @@ public class BrowserDriver {
     public static WebDriverWait wait;
 
     public BrowserDriver() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nika\\Downloads\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Saba.Janelidze\\Downloads\\chromedriver-win64\\chromedriver.exe");
 
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
