@@ -14,7 +14,7 @@ This project automates the testing of a website's various functionalities using 
 - Java Development Kit (JDK) 22 or higher.
 - Maven for managing dependencies.
 - ChromeDriver for browser automation.
-- An IDE
+- An IDE (Like IntelliJ IDEA or VSC)
 
 ## Running Tests
 
